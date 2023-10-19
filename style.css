@@ -1,0 +1,81 @@
+body {
+  min-height: 90vh;
+}
+
+
+.container {
+  width: 70vw;
+  height: 70vh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* perspective: 1000px;
+  transform-style: preserve-3d; */
+  transform: rotateX(60deg) rotateZ(45deg);
+
+}
+
+.cube {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 50px);
+  gap: 0px;
+  grid-template-rows: repeat(6, 50px);
+  border: 1px solid red;
+  width: 50px;
+  height: 50px;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.side {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+}
+
+.T {
+  grid-column: 3;
+  grid-row: 5;
+  background-color: aqua;
+  opacity: 80%;
+}
+
+.B {
+  grid-column: 3;
+  grid-row: 3;
+  background-color: green;
+  opacity: 80%;
+}
+
+.F {
+  grid-column: 3;
+  grid-row: 4;
+  background-color: orange;
+  opacity: 80%;
+}
+
+.Bk {
+  grid-column: 3;
+  grid-row: 2;
+  background-color: red;
+  opacity: 80%;
+}
+
+.L {
+  grid-column: 2;
+  grid-row: 3;
+  background-color: yellow;
+  opacity: 80%;
+}
+
+.R {
+  grid-column: 4;
+  grid-row: 3;
+  background-color: brown;
+  opacity: 80%;
+}
